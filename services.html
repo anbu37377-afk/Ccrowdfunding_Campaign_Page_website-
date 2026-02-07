@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start a Campaign - FundRise</title>
+    <meta name="description"
+        content="Launch your crowdfunding campaign with FundRise. Tools, support, and a community ready to back you.">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header / Navbar (Reuse exact structure) -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/images/logo.svg" alt="FundRise Logo" width="32" height="32" class="me-2">
+                FundRise
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-none d-lg-block" id="desktopMenu">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home-2.html">Discover</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Start a Campaign</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+
+                </ul>
+                <div class="d-flex align-items-center gap-2">
+                    <button class="btn btn-outline-secondary border-0" id="theme-toggle"><i
+                            class="bi bi-moon-stars"></i></button>
+                    <a href="login.html" class="btn btn-outline-primary">Log In</a>
+                    <a href="register.html" class="btn btn-primary">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Offcanvas Menu -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title fw-bold text-primary d-flex align-items-center" id="mobileMenuLabel">
+                <img src="assets/images/logo.svg" alt="FundRise Logo" width="24" height="24" class="me-2">
+                FundRise
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="home-2.html">Discover</a></li>
+                <li class="nav-item"><a class="nav-link active" href="services.html">Start a Campaign</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item">
+                    <hr class="dropdown-divider">
+                </li>
+                <li class="nav-item"><a class="nav-link" href="login.html">Log In</a></li>
+                <li class="nav-item"><a class="nav-link" href="register.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Turn Your Idea into Reality</h1>
+            <p class="lead text-muted mb-4 mx-auto" style="max-width: 700px;">
+                Everything you need to launch, fund, and manage your project.
+            </p>
+            <a href="register.html" class="btn btn-primary btn-lg">Start Project</a>
+        </div>
+    </section>
+
+    <!-- How It Works / Services -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 d-flex">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="feature-icon mb-4">
+                                <i class="bi bi-pencil-square"></i>
+                            </div>
+                            <h3>1. Create</h3>
+                            <p class="text-muted">
+                                Build a compelling campaign page. Tell your story with video, images, and a clear
+                                timeline.
+                            </p>
+                            <ul class="list-unstyled text-muted small">
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Easy-to-use Editor
+                                </li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Reward Tiers</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="feature-icon mb-4 text-center">
+                                <i class="bi bi-megaphone"></i>
+                            </div>
+                            <h3 class="fw-bold text-center">2. Fund</h3>
+                            <p class="text-muted">
+                                Reach backers and accept secure payments. Use flexible or fixed funding models.
+                            </p>
+                            <ul class="list-unstyled text-muted small">
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Global Payments
+                                </li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Real-time Analytics
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="feature-icon mb-4 text-center">
+                                <i class="bi bi-graph-up-arrow"></i>
+                            </div>
+                            <h3 class="fw-bold text-center">3. Deliver</h3>
+                            <p class="text-muted">
+                                Keep backers updated with progress reports. Manage orders and shipping easily.
+                            </p>
+                            <ul class="list-unstyled text-muted small">
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Backer Management
+                                </li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Update Tools</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Preview -->
+    <section class="bg-light py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">Simple, Transparent Pricing</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card border-0 shadow">
+                        <div class="card-body p-5">
+                            <h1 class="display-3 fw-bold text-primary">5%</h1>
+                            <p class="lead fw-bold">Platform Fee</p>
+                            <p class="text-muted">We only make money when you do.</p>
+                            <hr>
+                            <div class="d-flex justify-content-between px-3">
+                                <span>Payment Processing</span>
+                                <span class="fw-bold">3% + $0.30</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4">
+                <a href="pricing.html" class="btn btn-link">View Pricing Details</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Reuse exact structure) -->
+    <footer class="pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="assets/images/logo.svg" alt="FundRise Logo" width="40" height="40" class="me-3">
+                        <h4 class="fw-bold mb-0 text-white">FundRise</h4>
+                    </div>
+                    <p class="text-white-50">Empowering creators and backers to build a better future together. Trust,
+                        transparency, and innovation.</p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#" class="btn btn-sm btn-outline-light rounded-circle"><i
+                                class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="btn btn-sm btn-outline-light rounded-circle"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="#" class="btn btn-sm btn-outline-light rounded-circle"><i
+                                class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5 class="fw-bold mb-3 text-white">Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-decoration-none text-white-50">About Us</a>
+                        </li>
+                        <li class="mb-2"><a href="services.html" class="text-decoration-none text-white-50">How It
+                                Works</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-decoration-none text-white-50">Careers</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-decoration-none text-white-50">Press</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5 class="fw-bold mb-3 text-white">Support</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="contact.html" class="text-decoration-none text-white-50">Help
+                                Center</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-decoration-none text-white-50">Trust &
+                                Safety</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-white-50">Terms of Service</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-white-50">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3 text-white">Newsletter</h5>
+                    <p class="text-white-50">Stay updated with the latest projects and success stories.</p>
+                    <form>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email address"
+                                aria-label="Email">
+                            <button class="btn btn-tertiary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <small class="text-white-50">&copy; 2026 FundRise. All Rights Reserved.</small>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white-50 me-3 small">Privacy</a>
+                    <a href="#" class="text-white-50 small">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

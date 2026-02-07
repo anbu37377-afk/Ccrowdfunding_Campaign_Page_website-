@@ -1,0 +1,58 @@
+<svg width="400" height="250" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="250" rx="8" fill="#FFF5E6"/>
+  
+  <!-- Film/Movie illustration -->
+  <g transform="translate(200, 125)">
+    <!-- Film strip -->
+    <rect x="-60" y="-70" width="120" height="140" rx="8" fill="#2C3E50"/>
+    
+    <!-- Film frames -->
+    <rect x="-55" y="-65" width="110" height="130" rx="6" fill="#1A1A1A"/>
+    
+    <!-- Central screen area -->
+    <rect x="-45" y="-45" width="90" height="60" rx="4" fill="#4A90E2"/>
+    
+    <!-- Scene in screen (time travel effect) -->
+    <g transform="translate(0, -15)">
+      <!-- Time portal -->
+      <circle cx="0" cy="0" r="20" fill="#9C27B0" opacity="0.6"/>
+      <circle cx="0" cy="0" r="15" fill="#E91E63" opacity="0.7"/>
+      <circle cx="0" cy="0" r="10" fill="#FFD700" opacity="0.8"/>
+      
+      <!-- Clock hands representing time -->
+      <line x1="0" y1="0" x2="0" y2="-8" stroke="white" stroke-width="2"/>
+      <line x1="0" y1="0" x2="6" y2="0" stroke="white" stroke-width="2"/>
+    </g>
+    
+    <!-- Film perforations -->
+    <g transform="translate(-50, -60)">
+      <rect x="0" y="0" width="8" height="6" fill="#333"/>
+      <rect x="0" y="12" width="8" height="6" fill="#333"/>
+      <rect x="0" y="24" width="8" height="6" fill="#333"/>
+      <rect x="0" y="36" width="8" height="6" fill="#333"/>
+      <rect x="0" y="48" width="8" height="6" fill="#333"/>
+    </g>
+    
+    <g transform="translate(42, -60)">
+      <rect x="0" y="0" width="8" height="6" fill="#333"/>
+      <rect x="0" y="12" width="8" height="6" fill="#333"/>
+      <rect x="0" y="24" width="8" height="6" fill="#333"/>
+      <rect x="0" y="36" width="8" height="6" fill="#333"/>
+      <rect x="0" y="48" width="8" height="6" fill="#333"/>
+    </g>
+    
+    <!-- Clapper board top -->
+    <g transform="translate(0, -75)">
+      <rect x="-40" y="0" width="80" height="15" fill="#FF5722"/>
+      <line x1="-40" y1="0" x2="40" y2="15" stroke="white" stroke-width="2"/>
+      <line x1="-20" y1="0" x2="20" y2="15" stroke="white" stroke-width="2"/>
+      <line x1="0" y1="0" x2="0" y2="15" stroke="white" stroke-width="2"/>
+      <line x1="20" y1="0" x2="-20" y2="15" stroke="white" stroke-width="2"/>
+      <line x1="40" y1="0" x2="-40" y2="15" stroke="white" stroke-width="2"/>
+    </g>
+  </g>
+  
+  <!-- Text label -->
+  <text x="200" y="230" text-anchor="middle" fill="#FF5722" font-family="Arial, sans-serif" font-size="16" font-weight="bold">Sci-Fi Film Project</text>
+</svg>

@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNDRAISE - Crowdfunding Platform</title>
+    <meta name="description" content="Fund your dreams or support the next big idea on FUNDRAISE.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/images/logo.svg" alt="FUNDRAISE Logo" width="32" height="32" class="me-2">
+                FUNDRAISE
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse d-none d-lg-block" id="desktopMenu">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="home-2.html">Home 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Start a Campaign</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">Dashboard</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center gap-2">
+                    <button class="btn btn-outline-secondary border-0" id="theme-toggle">
+                        <i class="bi bi-moon-stars"></i>
+                    </button>
+                    <a href="login.html" class="btn btn-outline-primary">Log In</a>
+                    <a href="register.html" class="btn btn-primary">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Offcanvas Menu -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title fw-bold text-primary d-flex align-items-center" id="mobileMenuLabel">
+                <img src="assets/images/logo.svg" alt="FUNDRAISE Logo" width="24" height="24" class="me-2">
+                FUNDRAISE
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Start a Campaign</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+                <li class="nav-item"><hr class="dropdown-divider"></li>
+                <li class="nav-item"><a class="nav-link" href="login.html">Log In</a></li>
+                <li class="nav-item"><a class="nav-link" href="register.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0 text-center">
+                    <h1 class="display-4 fw-bold mb-3">Fund Dreams. <br>Build the Future.</h1>
+                    <p class="lead text-muted mb-4">
+                        Discover innovative projects, support creative ideas, and join a community of trustworthy backers and creators.
+                    </p>
+                    <div class="d-flex gap-3 justify-content-center">
+                        <a href="services.html" class="btn btn-primary btn-lg">Start a Campaign</a>
+                        <a href="home-2.html" class="btn btn-outline-secondary btn-lg">Back a Project</a>
+                    </div>
+                    
+                    <div class="mt-4 pt-3 border-top d-flex gap-4 justify-content-center">
+                        <div>
+                            <h4 class="fw-bold mb-0">10k+</h4>
+                            <small class="text-muted">Projects Funded</small>
+                        </div>
+                        <div>
+                            <h4 class="fw-bold mb-0">$50M+</h4>
+                            <small class="text-muted">Raised Total</small>
+                        </div>
+                        <div>
+                            <h4 class="fw-bold mb-0">98%</h4>
+                            <small class="text-muted">Success Rate</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="assets/images/hero-crowdfunding.svg" alt="Crowdfunding Vision - Community supporting innovative projects" class="img-fluid rounded-4 shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="container py-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Why FundRise?</h2>
+            <p class="text-muted">We prioritize trust, transparency, and success.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4 text-center">
+                <div class="feature-icon mx-auto text-primary bg-primary-subtle rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 64px; height: 64px; font-size: 1.5rem;">
+                    <i class="bi bi-shield-check"></i>
+                </div>
+                <h4>Trust & Security</h4>
+                <p class="text-muted">Verified creators and secure payment gateways ensure your contribution is safe.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="feature-icon mx-auto text-primary bg-primary-subtle rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 64px; height: 64px; font-size: 1.5rem;">
+                    <i class="bi bi-bar-chart-fill"></i>
+                </div>
+                <h4>Real-Time Progress</h4>
+                <p class="text-muted">Track funding goals and project milestones with live updates from creators.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="feature-icon mx-auto text-primary bg-primary-subtle rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 64px; height: 64px; font-size: 1.5rem;">
+                    <i class="bi bi-people-fill"></i>
+                </div>
+                <h4>Community First</h4>
+                <p class="text-muted">Connect with creators, ask questions, and be part of the journey.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Campaigns -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold mb-3">Trending Campaigns</h2>
+                <a href="home-2.html" class="text-decoration-none fw-bold">View All <i class="bi bi-arrow-right"></i></a>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/images/eco-bottle.svg" class="card-img-top" alt="Eco-Friendly Self-Cleaning Bottle">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Eco-Friendly</span>
+                            <h5 class="card-title fw-bold">The Ultimate Self-Cleaning Bottle</h5>
+                            <p class="card-text text-muted small">A sustainable water bottle that cleans itself and keeps water fresh for 24 hours.</p>
+                            
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between small mb-1">
+                                    <span class="fw-bold">$12,500 raised</span>
+                                    <span class="text-muted">83%</span>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-success" style="width: 83%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-clock me-1 text-muted"></i> <small class="text-muted">5 days left</small>
+                                </div>
+                                <a href="service-details.html" class="btn btn-outline-primary btn-sm">Support</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/images/smart-watch.svg" class="card-img-top" alt="NextGen Health Tracker Smart Watch">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Tech</span>
+                            <h5 class="card-title fw-bold">NextGen Health Tracker</h5>
+                            <p class="card-text text-muted small">Monitor vitals with medical-grade accuracy. The future of personal health is here.</p>
+                            
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between small mb-1">
+                                    <span class="fw-bold">$45,000 raised</span>
+                                    <span class="text-muted">120%</span>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-primary" style="width: 100%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-clock me-1 text-muted"></i> <small class="text-muted">12 days left</small>
+                                </div>
+                                <a href="service-details.html" class="btn btn-outline-primary btn-sm">Support</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/images/sci-fi-film.svg" class="card-img-top" alt="Lost in Time Sci-Fi Short Film">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">Film</span>
+                            <h5 class="card-title fw-bold">"Lost in Time" - A Sci-Fi Short</h5>
+                            <p class="card-text text-muted small">Support this independent film project about time travel and human connection.</p>
+                            
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between small mb-1">
+                                    <span class="fw-bold">$3,200 raised</span>
+                                    <span class="text-muted">45%</span>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar bg-warning" style="width: 45%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-clock me-1 text-muted"></i> <small class="text-muted">20 days left</small>
+                                </div>
+                                <a href="service-details.html" class="btn btn-outline-primary btn-sm">Support</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section class="py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-5">Success Stories</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="mb-3">
+                                <i class="bi bi-trophy-fill text-warning" style="font-size: 3rem;"></i>
+                            </div>
+                            <h5 class="fw-bold">EcoTech Solutions</h5>
+                            <p class="text-muted small">Raised $250,000 from 5,000+ backers</p>
+                            <div class="d-flex justify-content-center">
+                                <span class="badge bg-success">Funded</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="mb-3">
+                                <i class="bi bi-heart-fill text-danger" style="font-size: 3rem;"></i>
+                            </div>
+                            <h5 class="fw-bold">HealthWatch Pro</h5>
+                            <p class="text-muted small">Raised $180,000 from 3,200+ backers</p>
+                            <div class="d-flex justify-content-center">
+                                <span class="badge bg-success">Funded</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="mb-3">
+                                <i class="bi bi-camera-reels-fill text-primary" style="font-size: 3rem;"></i>
+                            </div>
+                            <h5 class="fw-bold">Indie Film Collective</h5>
+                            <p class="text-muted small">Raised $95,000 from 2,100+ backers</p>
+                            <div class="d-flex justify-content-center">
+                                <span class="badge bg-success">Funded</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="bg-light py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-5">How FUNDRAISE Works</h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <div class="mb-3">
+                            <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                <i class="bi bi-pencil-square" style="font-size: 2rem;"></i>
+                            </div>
+                        </div>
+                        <h5 class="fw-bold">1. Create</h5>
+                        <p class="text-muted">Share your idea and set your funding goal</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <div class="mb-3">
+                            <div class="bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                <i class="bi bi-share" style="font-size: 2rem;"></i>
+                            </div>
+                        </div>
+                        <h5 class="fw-bold">2. Share</h5>
+                        <p class="text-muted">Spread the word to your network</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <div class="mb-3">
+                            <div class="bg-warning text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                <i class="bi bi-people" style="font-size: 2rem;"></i>
+                            </div>
+                        </div>
+                        <h5 class="fw-bold">3. Back</h5>
+                        <p class="text-muted">Support projects you believe in</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <div class="mb-3">
+                            <div class="bg-info text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                <i class="bi bi-check-circle" style="font-size: 2rem;"></i>
+                            </div>
+                        </div>
+                        <h5 class="fw-bold">4. Launch</h5>
+                        <p class="text-muted">Bring your vision to life</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5 text-center">
+                <a href="services.html" class="btn btn-primary btn-lg">Start Your Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-5">Explore Categories</h2>
+            <div class="row g-4">
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="card h-100 border-0 shadow-sm text-center p-3">
+                        <div class="mb-3">
+                            <i class="bi bi-cpu text-primary" style="font-size: 2.5rem;"></i>
+                        </div>
+                        <h5 class="fw-bold">Technology</h5>
+                        <p class="text-muted small">Innovative tech projects</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="card h-100 border-0 shadow-sm text-center p-3">
+                        <div class="mb-3">
+                            <i class="bi bi-heart-pulse text-danger" style="font-size: 2.5rem;"></i>
+                        </div>
+                        <h5 class="fw-bold">Health</h5>
+                        <p class="text-muted small">Medical & wellness</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="card h-100 border-0 shadow-sm text-center p-3">
+                        <div class="mb-3">
+                            <i class="bi bi-palette text-success" style="font-size: 2.5rem;"></i>
+                        </div>
+                        <h5 class="fw-bold">Arts</h5>
+                        <p class="text-muted small">Creative projects</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="card h-100 border-0 shadow-sm text-center p-3">
+                        <div class="mb-3">
+                            <i class="bi bi-film text-warning" style="font-size: 2.5rem;"></i>
+                        </div>
+                        <h5 class="fw-bold">Film</h5>
+                        <p class="text-muted small">Movies & documentaries</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="card h-100 border-0 shadow-sm text-center p-3">
+                        <div class="mb-3">
+                            <i class="bi bi-music-note text-info" style="font-size: 2.5rem;"></i>
+                        </div>
+                        <h5 class="fw-bold">Music</h5>
+                        <p class="text-muted small">Audio projects</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="card h-100 border-0 shadow-sm text-center p-3">
+                        <div class="mb-3">
+                            <i class="bi bi-tree text-secondary" style="font-size: 2.5rem;"></i>
+                        </div>
+                        <h5 class="fw-bold">Environment</h5>
+                        <p class="text-muted small">Eco-friendly projects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="bg-primary text-white py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-5">What Our Creators Say</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card bg-white text-dark h-100 border-0 shadow">
+                        <div class="card-body text-center">
+                            <div class="mb-3">
+                                <img src="https://placehold.co/80x80/4A90E2/ffffff?text=JD" class="rounded-circle" alt="Creator">
+                            </div>
+                            <h5 class="fw-bold">John Doe</h5>
+                            <p class="text-muted small mb-3">Tech Entrepreneur</p>
+                            <p class="fst-italic">"FUNDRAISE helped us turn our smartwatch idea into reality. The platform is intuitive and the community support is amazing!"</p>
+                            <div class="text-warning">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-white text-dark h-100 border-0 shadow">
+                        <div class="card-body text-center">
+                            <div class="mb-3">
+                                <img src="https://placehold.co/80x80/28a745/ffffff?text=SM" class="rounded-circle" alt="Creator">
+                            </div>
+                            <h5 class="fw-bold">Sarah Miller</h5>
+                            <p class="text-muted small mb-3">Filmmaker</p>
+                            <p class="fst-italic">"Without FUNDRAISE, our indie film wouldn't have seen the light of day. The platform connects creators with passionate backers."</p>
+                            <div class="text-warning">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-white text-dark h-100 border-0 shadow">
+                        <div class="card-body text-center">
+                            <div class="mb-3">
+                                <img src="https://placehold.co/80x80/f5a623/ffffff?text=RK" class="rounded-circle" alt="Creator">
+                            </div>
+                            <h5 class="fw-bold">Robert Kim</h5>
+                            <p class="text-muted small mb-3">Eco Innovator</p>
+                            <p class="fst-italic">"The eco-friendly bottle project exceeded our goals thanks to the incredible FUNDRAISE community. Truly life-changing!"</p>
+                            <div class="text-warning">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Counter Section -->
+    <section class="bg-light py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-5">Our Impact</h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <h3 class="fw-bold text-primary mb-2">$500M+</h3>
+                        <p class="text-muted">Total Raised</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <h3 class="fw-bold text-success mb-2">50,000+</h3>
+                        <p class="text-muted">Projects Funded</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <h3 class="fw-bold text-warning mb-2">2M+</h3>
+                        <p class="text-muted">Active Backers</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <h3 class="fw-bold text-info mb-2">95%</h3>
+                        <p class="text-muted">Success Rate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-primary text-white text-center">
+        <div class="container">
+            <h2 class="fw-bold mb-3">Ready to Bring Your Idea to Life?</h2>
+            <p class="lead mb-4">Join thousands of creators who have successfully funded their projects on FUNDRAISE.</p>
+            <a href="services.html" class="btn btn-light btn-lg fw-bold text-primary">Start Your Campaign</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="assets/images/logo.svg" alt="FUNDRAISE Logo" width="40" height="40" class="me-3">
+                        <h4 class="fw-bold mb-0 text-white">FUNDRAISE</h4>
+                    </div>
+                    <p class="text-white-50">Empowering creators and backers to build a better future together. Trust, transparency, and innovation.</p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#" class="btn btn-sm btn-outline-light rounded-circle"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="btn btn-sm btn-outline-light rounded-circle"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="btn btn-sm btn-outline-light rounded-circle"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5 class="fw-bold mb-3 text-white">Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-decoration-none text-white-50">About Us</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-decoration-none text-white-50">How It Works</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-decoration-none text-white-50">Careers</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-decoration-none text-white-50">Press</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5 class="fw-bold mb-3 text-white">Support</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="contact.html" class="text-decoration-none text-white-50">Help Center</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-decoration-none text-white-50">Trust & Safety</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-white-50">Terms of Service</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-white-50">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3 text-white">Newsletter</h5>
+                    <p class="text-white-50">Stay updated with the latest projects and success stories.</p>
+                    <form>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email address" aria-label="Email">
+                            <button class="btn btn-tertiary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <small class="text-white-50">&copy; 2026 FUNDRAISE. All Rights Reserved.</small>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white-50 me-3 small">Privacy</a>
+                    <a href="#" class="text-white-50 small">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

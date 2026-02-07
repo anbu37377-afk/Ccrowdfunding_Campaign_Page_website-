@@ -1,0 +1,339 @@
+/* 
+ * Crowdfunding Platform - Main Stylesheet
+ * beginner-friendly, organized by sections
+ */
+
+:root {
+  /* --- 3-Color Palette --- */
+  --primary-color: #4A90E2;    /* Trustworthy Blue */
+  --secondary-color: #2C3E50;  /* Professional Dark Blue/Gray */
+  --tertiary-color: #F5A623;   /* Energetic Orange/Gold for CTAs and Highlights */
+  
+  /* --- Functional Colors --- */
+  --success-color: #28a745;
+  --bg-light: #f8f9fa;
+  --bg-white: #ffffff;
+  --text-dark: #212529;
+  --text-muted: #6c757d;
+  --border-color: #dee2e6;
+  
+  /* --- Spacing & Radius --- */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --card-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  --section-padding: 80px 0;
+}
+
+/* --- Dark Theme Variables --- */
+[data-bs-theme="dark"] {
+  --bg-light: #212529;
+  --bg-white: #1a1d20;
+  --text-dark: #f8f9fa;
+  --text-muted: #adb5bd;
+  --border-color: #495057;
+  --card-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+/* --- Global Reset & Typography --- */
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif; /* Modern, clean font */
+  color: var(--text-dark);
+  background-color: var(--bg-white);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+[data-bs-theme="dark"] h1, 
+[data-bs-theme="dark"] h2, 
+[data-bs-theme="dark"] h3, 
+[data-bs-theme="dark"] h4, 
+[data-bs-theme="dark"] h5, 
+[data-bs-theme="dark"] h6 {
+  color: var(--text-dark);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--tertiary-color);
+}
+
+section {
+  padding: var(--section-padding);
+}
+
+/* --- Buttons --- */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+  padding: 10px 24px;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #357abd; /* Darker shade of primary */
+  border-color: #357abd;
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: white;
+  padding: 10px 24px;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+}
+
+.btn-tertiary {
+  background-color: var(--tertiary-color);
+  border-color: var(--tertiary-color);
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+}
+
+.btn-tertiary:hover {
+  background-color: #d48b15;
+  color: #fff;
+}
+
+/* --- Cards --- */
+.card {
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--card-shadow);
+  transition: transform 0.2s, box-shadow 0.2s;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* --- Progress Bars --- */
+.progress {
+  height: 10px;
+  border-radius: 5px;
+  background-color: #e9ecef;
+}
+
+[data-bs-theme="dark"] .progress {
+  background-color: #343a40;
+}
+
+.progress-bar {
+  background-color: var(--tertiary-color); /* Highlight progress with Action color */
+}
+
+/* --- Navbar --- */
+.navbar {
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  padding: 1rem 0;
+  background-color: var(--bg-white);
+}
+
+.navbar-brand {
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: var(--primary-color) !important;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar-brand img {
+  transition: transform 0.2s ease;
+}
+
+.navbar-brand:hover img {
+  transform: scale(1.05);
+}
+
+.nav-link {
+  font-weight: 500;
+  color: var(--secondary-color) !important;
+}
+
+[data-bs-theme="dark"] .nav-link {
+  color: var(--text-dark) !important;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--primary-color) !important;
+}
+
+/* --- Hero Section --- */
+.hero-section {
+  padding: 100px 0;
+  background-color: var(--bg-light);
+  display: flex;
+  align-items: center;
+}
+
+/* --- Features --- */
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(74, 144, 226, 0.1); /* Primary color with opacity */
+  color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* --- Footer --- */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 60px 0 20px;
+}
+
+footer a {
+  color: rgba(255,255,255,0.8);
+}
+
+footer a:hover {
+  color: var(--tertiary-color);
+}
+
+/* --- Admin Dashboard Specific --- */
+.sidebar {
+  min-height: 100vh;
+  background-color: var(--bg-white);
+  border-right: 1px solid var(--border-color);
+}
+
+.sidebar .nav-link {
+  color: var(--text-dark) !important;
+  padding: 12px 20px;
+  border-radius: var(--radius-md);
+  margin-bottom: 5px;
+}
+
+.sidebar .nav-link:hover, 
+.sidebar .nav-link.active {
+  background-color: rgba(74, 144, 226, 0.1); /* Primary-light */
+  color: var(--primary-color) !important;
+}
+
+/* --- Dark Theme Support --- */
+[data-bs-theme="dark"] .carousel-control-prev-icon,
+[data-bs-theme="dark"] .carousel-control-next-icon {
+  background-color: var(--bg-white);
+  color: var(--text-dark);
+}
+
+[data-bs-theme="dark"] .carousel-control-prev-icon:hover,
+[data-bs-theme="dark"] .carousel-control-next-icon:hover {
+  background-color: var(--primary-color);
+}
+
+[data-bs-theme="dark"] .carousel-item {
+  background-color: var(--bg-white);
+  border-radius: var(--radius-lg);
+}
+
+[data-bs-theme="dark"] .carousel-item .lead {
+  color: var(--text-dark);
+}
+
+[data-bs-theme="dark"] .carousel-item h5 {
+  color: var(--text-dark);
+}
+
+[data-bs-theme="dark"] .text-primary {
+  color: var(--primary-color) !important;
+}
+
+/* Pricing Section Dark Theme */
+[data-bs-theme="dark"] h2.text-primary {
+  color: var(--text-dark) !important;
+}
+
+[data-bs-theme="dark"] .card {
+  background-color: var(--bg-white);
+  border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .card h1 {
+  color: var(--primary-color);
+}
+
+[data-bs-theme="dark"] .card .lead {
+  color: var(--text-dark) !important;
+}
+
+[data-bs-theme="dark"] .card .fw-bold {
+  color: var(--text-dark) !important;
+}
+
+[data-bs-theme="dark"] .card .text-muted {
+  color: var(--text-dark) !important;
+}
+
+/* About Page Hero Section Dark Theme */
+[data-bs-theme="dark"] .bg-light h1 {
+  color: var(--bg-white) !important;
+}
+
+[data-bs-theme="dark"] .bg-light .fw-bold {
+  color: var(--bg-white) !important;
+}
+
+/* Blog Page Dark Theme */
+[data-bs-theme="dark"] .blog-hero h1 {
+  color: var(--bg-white) !important;
+}
+
+[data-bs-theme="dark"] .blog-hero .lead {
+  color: var(--bg-white) !important;
+}
+
+[data-bs-theme="dark"] .card-title {
+  color: var(--bg-white) !important;
+}
+
+[data-bs-theme="dark"] .card-title a {
+  color: var(--bg-white) !important;
+}
+
+/* Contact Page Dark Theme */
+[data-bs-theme="dark"] .bg-light h1 {
+  color: var(--bg-white) !important;
+}
+
+[data-bs-theme="dark"] .bg-light .lead {
+  color: var(--bg-white) !important;
+}
+
+/* Mobile Sidebar Helper */
+@media (max-width: 768px) {
+  .sidebar {
+    min-height: auto;
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+  }
+}

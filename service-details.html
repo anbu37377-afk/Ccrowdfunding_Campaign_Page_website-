@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaign Details - FundRise</title>
+    <meta name="description" content="Support this project on FundRise.">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header / Navbar (Reuse exact structure) -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">FundRise</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-none d-lg-block" id="desktopMenu">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home-2.html">Discover</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Start a Campaign</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                                                            <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+
+                </ul>
+                <div class="d-flex align-items-center gap-2">
+                    <button class="btn btn-outline-secondary border-0" id="theme-toggle"><i
+                            class="bi bi-moon-stars"></i></button>
+                    <a href="login.html" class="btn btn-outline-primary">Log In</a>
+                    <a href="register.html" class="btn btn-primary">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Offcanvas Menu -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+        <!-- (Same as other pages) -->
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title fw-bold text-primary">FundRise</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="home-2.html">Discover</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Start a Campaign</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item">
+                    <hr class="dropdown-divider">
+                </li>
+                <li class="nav-item"><a class="nav-link" href="login.html">Log In</a></li>
+                <li class="nav-item"><a class="nav-link" href="register.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Campaign Hero -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Media -->
+                <div class="col-lg-8">
+                    <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-sm mb-4">
+                        <img src="https://placehold.co/800x450/e9ecef/adb5bd?text=Campaign+Video+Placeholder"
+                            alt="Campaign Video" class="object-fit-cover">
+                    </div>
+                </div>
+                <!-- Core Funding Info -->
+                <div class="col-lg-4">
+                    <h6 class="text-primary fw-bold text-uppercase">Tech & Design</h6>
+                    <h1 class="fw-bold mb-2">The Ultimate Self-Cleaning Bottle</h1>
+                    <p class="text-muted">A sustainable water bottle that cleans itself and keeps water fresh forever.
+                    </p>
+
+                    <div class="d-flex align-items-center mb-4">
+                        <img src="https://placehold.co/50x50?text=C" class="rounded-circle me-2" alt="Creator">
+                        <small>by <span class="fw-bold">EcoLife Inc.</span></small>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="progress mb-2" style="height: 12px;">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 83%"></div>
+                        </div>
+                        <h2 class="fw-bold text-success mb-0">$12,500</h2>
+                        <span class="text-muted">pledged of $15,000 goal</span>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-6">
+                            <h4 class="fw-bold mb-0">342</h4>
+                            <small class="text-muted">backers</small>
+                        </div>
+                        <div class="col-6">
+                            <h4 class="fw-bold mb-0">5</h4>
+                            <small class="text-muted">days to go</small>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary btn-lg w-100 mb-2">Back this Project</button>
+                    <button class="btn btn-outline-secondary w-100"><i class="bi bi-bookmark-heart"></i> Remind
+                        Me</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Details / Tabs -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Left: ContentTabs -->
+                <div class="col-lg-8">
+                    <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <button class="nav-link active" id="story-tab" data-bs-toggle="tab" data-bs-target="#story"
+                                type="button">Story</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" id="updates-tab" data-bs-toggle="tab" data-bs-target="#updates"
+                                type="button">Updates <span class="badge bg-secondary rounded-pill">3</span></button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" id="comments-tab" data-bs-toggle="tab" data-bs-target="#comments"
+                                type="button">Comments</button>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="myTabContent">
+                        <!-- Story Tab -->
+                        <div class="tab-pane fade show active" id="story" role="tabpanel">
+                            <h3 class="fw-bold mb-3">About the Project</h3>
+                            <p class="lead text-muted mb-4">Pure water, anywhere you go. No more musty smells.</p>
+                            <img src="https://placehold.co/800x400/f8f9fa/dee2e6?text=Product+Shot"
+                                class="img-fluid rounded-3 mb-4" alt="Product">
+                            <p>We designed this bottle to solve a common problem: bacteria buildup. Using UV-C light
+                                technology, the bottle neutralizes 99.9% of bacteria every 2 hours.</p>
+                            <h4 class="fw-bold mt-4">Features</h4>
+                            <ul>
+                                <li>Self-cleaning cycle</li>
+                                <li>Double-wall insulation</li>
+                                <li>Long-lasting battery</li>
+                            </ul>
+                        </div>
+
+                        <!-- Updates Tab -->
+                        <div class="tab-pane fade" id="updates" role="tabpanel">
+                            <div class="card mb-4 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <small class="text-muted">Jan 28, 2026</small>
+                                    <h5 class="fw-bold mt-1">Prototype Testing Complete!</h5>
+                                    <p class="text-muted">Great news backers! We have finished the final round of stress
+                                        testing...</p>
+                                    <a href="#" class="btn btn-link px-0">Read more</a>
+                                </div>
+                            </div>
+                            <div class="card mb-4 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <small class="text-muted">Jan 15, 2026</small>
+                                    <h5 class="fw-bold mt-1">Manufacturing Partner Secured</h5>
+                                    <p class="text-muted">We have officially signed with a top-tier manufacturer...</p>
+                                    <a href="#" class="btn btn-link px-0">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Comments Tab -->
+                        <div class="tab-pane fade" id="comments" role="tabpanel">
+                            <div class="card bg-light border-0 mb-4">
+                                <div class="card-body">
+                                    <h5 class="fw-bold mb-3">Leave a Comment</h5>
+                                    <!-- Only logged-in backers usually, but for demo: -->
+                                    <textarea class="form-control mb-2" rows="3"
+                                        placeholder="Ask a question..."></textarea>
+                                    <button class="btn btn-primary btn-sm">Post Comment</button>
+                                </div>
+                            </div>
+
+                            <!-- Comment Item -->
+                            <div class="d-flex mb-4">
+                                <img src="https://placehold.co/50x50?text=U1" class="rounded-circle me-3" alt="User">
+                                <div>
+                                    <h6 class="fw-bold mb-0">Jane Doe <span
+                                            class="badge bg-secondary ms-2 small">Backer</span></h6>
+                                    <small class="text-muted">2 days ago</small>
+                                    <p class="mt-1">So excited for this! Will there be a blue color option?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Rewards Sidebar -->
+                <div class="col-lg-4">
+                    <h4 class="fw-bold mb-3">Select a Reward</h4>
+
+                    <!-- Reward Card -->
+                    <div class="card mb-3 shadow-hover border-primary cursor-pointer">
+                        <div class="card-body">
+                            <h5 class="fw-bold">Pledge $50</h5>
+                            <h6 class="text-primary fw-bold">Early Bird - Single Bottle</h6>
+                            <p class="small text-muted mb-2">Get one (1) Self-Cleaning Bottle at 30% off retail.</p>
+                            <ul class="small ps-3 text-muted">
+                                <li>1x Smart Bottle</li>
+                                <li>All unlocked colors</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <small class="text-muted">Est. Del: Aug 2026</small>
+                                <button class="btn btn-sm btn-primary">Select</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reward Card -->
+                    <div class="card mb-3 shadow-hover cursor-pointer opacity-75">
+                        <div class="card-body">
+                            <h5 class="fw-bold">Pledge $90</h5>
+                            <h6 class="text-primary fw-bold">Double Pack</h6>
+                            <p class="small text-muted mb-2">Get two (2) bottles. Perfect for couples.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <small class="text-muted">Est. Del: Aug 2026</small>
+                                <button class="btn btn-sm btn-outline-secondary">Select</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Reuse exact structure) -->
+    <footer class="pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 class="fw-bold mb-3 text-white">FundRise</h4>
+                    <p class="text-white-50">Empowering creators and backers to build a better future together. Trust,
+                        transparency, and innovation.</p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#" class="btn btn-sm btn-outline-light rounded-circle"><i
+                                class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="btn btn-sm btn-outline-light rounded-circle"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="#" class="btn btn-sm btn-outline-light rounded-circle"><i
+                                class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <!-- ... other columns same as index ... -->
+                <div class="col-lg-2 col-6">
+                    <h5 class="fw-bold mb-3 text-white">Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-decoration-none text-white-50">About Us</a>
+                        </li>
+                        <li class="mb-2"><a href="services.html" class="text-decoration-none text-white-50">How It
+                                Works</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-decoration-none text-white-50">Careers</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-decoration-none text-white-50">Press</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5 class="fw-bold mb-3 text-white">Support</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="contact.html" class="text-decoration-none text-white-50">Help
+                                Center</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-decoration-none text-white-50">Trust &
+                                Safety</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-white-50">Terms of Service</a>
+                        </li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-white-50">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3 text-white">Newsletter</h5>
+                    <p class="text-white-50">Stay updated with the latest projects and success stories.</p>
+                    <form>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email address"
+                                aria-label="Email">
+                            <button class="btn btn-tertiary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <small class="text-white-50">&copy; 2026 FundRise. All Rights Reserved.</small>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white-50 me-3 small">Privacy</a>
+                    <a href="#" class="text-white-50 small">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
