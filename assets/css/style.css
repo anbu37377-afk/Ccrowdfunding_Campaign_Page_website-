@@ -199,6 +199,10 @@ section {
   color: var(--primary-color) !important;
 }
 
+.navbar-toggler {
+  margin-left: auto;
+}
+
 /* --- Hero Section --- */
 .hero-section {
   padding: 100px 0;
@@ -454,7 +458,7 @@ footer a:hover {
 }
 
 /* Mobile Sidebar Helper */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .sidebar {
     min-height: auto;
     border-right: none;
