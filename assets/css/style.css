@@ -5,10 +5,13 @@
 
 :root {
   /* --- 3-Color Palette --- */
-  --primary-color: #4A90E2;    /* Trustworthy Blue */
-  --secondary-color: #2C3E50;  /* Professional Dark Blue/Gray */
-  --tertiary-color: #F5A623;   /* Energetic Orange/Gold for CTAs and Highlights */
-  
+  --primary-color: #4A90E2;
+  /* Trustworthy Blue */
+  --secondary-color: #2C3E50;
+  /* Professional Dark Blue/Gray */
+  --tertiary-color: #F5A623;
+  /* Energetic Orange/Gold for CTAs and Highlights */
+
   /* --- Functional Colors --- */
   --success-color: #28a745;
   --bg-light: #f8f9fa;
@@ -16,12 +19,12 @@
   --text-dark: #212529;
   --text-muted: #6c757d;
   --border-color: #dee2e6;
-  
+
   /* --- Spacing & Radius --- */
   --radius-sm: 4px;
   --radius-md: 8px;
   --radius-lg: 16px;
-  --card-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   --section-padding: 80px 0;
 }
 
@@ -32,27 +35,33 @@
   --text-dark: #f8f9fa;
   --text-muted: #adb5bd;
   --border-color: #495057;
-  --card-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 /* --- Global Reset & Typography --- */
 body {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif; /* Modern, clean font */
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  /* Modern, clean font */
   color: var(--text-dark);
   background-color: var(--bg-white);
   line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   color: var(--secondary-color);
 }
 
-[data-bs-theme="dark"] h1, 
-[data-bs-theme="dark"] h2, 
-[data-bs-theme="dark"] h3, 
-[data-bs-theme="dark"] h4, 
-[data-bs-theme="dark"] h5, 
+[data-bs-theme="dark"] h1,
+[data-bs-theme="dark"] h2,
+[data-bs-theme="dark"] h3,
+[data-bs-theme="dark"] h4,
+[data-bs-theme="dark"] h5,
 [data-bs-theme="dark"] h6 {
   color: var(--text-dark);
 }
@@ -83,7 +92,8 @@ section {
 }
 
 .btn-primary:hover {
-  background-color: #357abd; /* Darker shade of primary */
+  background-color: #357abd;
+  /* Darker shade of primary */
   border-color: #357abd;
 }
 
@@ -122,7 +132,7 @@ section {
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .card-img-top {
@@ -142,12 +152,13 @@ section {
 }
 
 .progress-bar {
-  background-color: var(--tertiary-color); /* Highlight progress with Action color */
+  background-color: var(--tertiary-color);
+  /* Highlight progress with Action color */
 }
 
 /* --- Navbar --- */
 .navbar {
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   padding: 1rem 0;
   background-color: var(--bg-white);
 }
@@ -159,6 +170,11 @@ section {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  text-decoration: none !important;
+}
+
+[data-bs-theme="dark"] .navbar-brand {
+  color: var(--primary-color) !important;
 }
 
 .navbar-brand img {
@@ -178,7 +194,8 @@ section {
   color: var(--text-dark) !important;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
   color: var(--primary-color) !important;
 }
 
@@ -194,7 +211,8 @@ section {
 .feature-icon {
   width: 60px;
   height: 60px;
-  background-color: rgba(74, 144, 226, 0.1); /* Primary color with opacity */
+  background-color: rgba(74, 144, 226, 0.1);
+  /* Primary color with opacity */
   color: var(--primary-color);
   border-radius: 50%;
   display: flex;
@@ -206,13 +224,19 @@ section {
 
 /* --- Footer --- */
 footer {
-  background-color: var(--primary-color);
+  background-color: #111827;
+  /* Deep gray-blue for better contrast */
   color: white;
   padding: 60px 0 20px;
 }
 
+.footer-brand {
+  color: var(--primary-color) !important;
+  font-weight: 800;
+}
+
 footer a {
-  color: rgba(255,255,255,0.8);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 footer a:hover {
@@ -226,6 +250,12 @@ footer a:hover {
   border-right: 1px solid var(--border-color);
 }
 
+.sidebar .navbar-brand {
+  color: var(--primary-color) !important;
+  font-weight: 800 !important;
+  font-size: 1.5rem;
+}
+
 .sidebar .nav-link {
   color: var(--text-dark) !important;
   padding: 12px 20px;
@@ -233,9 +263,10 @@ footer a:hover {
   margin-bottom: 5px;
 }
 
-.sidebar .nav-link:hover, 
+.sidebar .nav-link:hover,
 .sidebar .nav-link.active {
-  background-color: rgba(74, 144, 226, 0.1); /* Primary-light */
+  background-color: rgba(74, 144, 226, 0.1);
+  /* Primary-light */
   color: var(--primary-color) !important;
 }
 
@@ -268,9 +299,47 @@ footer a:hover {
   color: var(--primary-color) !important;
 }
 
+/* Ensure Bootstrap .bg-light sections render dark in dark mode */
+[data-bs-theme="dark"] .bg-light {
+  background-color: var(--bg-light) !important;
+}
+
 /* Pricing Section Dark Theme */
 [data-bs-theme="dark"] h2.text-primary {
   color: var(--text-dark) !important;
+}
+
+[data-bs-theme="dark"] .bg-light h2.fw-bold {
+  color: #ffffff !important;
+}
+
+[data-bs-theme="dark"] .bg-light .lead.fw-bold {
+  color: #ffffff !important;
+}
+
+[data-bs-theme="dark"] .bg-light .text-primary {
+  color: var(--primary-color) !important;
+}
+
+[data-bs-theme="dark"] .bg-light .text-muted {
+  color: #adb5bd !important;
+}
+
+[data-bs-theme="dark"] .bg-light span {
+  color: #ffffff !important;
+}
+
+[data-bs-theme="dark"] .bg-light .card {
+  background-color: var(--bg-white) !important;
+  color: var(--text-dark) !important;
+}
+
+[data-bs-theme="dark"] .bg-light .card span {
+  color: var(--text-dark) !important;
+}
+
+[data-bs-theme="dark"] .bg-light hr {
+  border-color: var(--border-color) !important;
 }
 
 [data-bs-theme="dark"] .card {
@@ -294,30 +363,85 @@ footer a:hover {
   color: var(--text-dark) !important;
 }
 
-/* About Page Hero Section Dark Theme */
-[data-bs-theme="dark"] .bg-light h1 {
-  color: var(--bg-white) !important;
+/* Keep text readable on light cards in dark mode */
+[data-bs-theme="dark"] .card.bg-white {
+  background-color: var(--bg-white) !important;
+  color: var(--text-dark) !important;
+  border: 1px solid var(--border-color) !important;
 }
 
+[data-bs-theme="dark"] .card.bg-white .fw-bold,
+[data-bs-theme="dark"] .card.bg-white .lead,
+[data-bs-theme="dark"] .card.bg-white .card-title,
+[data-bs-theme="dark"] .card.bg-white .card-title a,
+[data-bs-theme="dark"] .card.bg-white p,
+[data-bs-theme="dark"] .card.bg-white .fst-italic {
+  color: var(--text-dark) !important;
+}
+
+[data-bs-theme="dark"] .card.bg-white .text-muted {
+  color: var(--text-muted) !important;
+}
+
+/* About Page Hero Section Dark Theme */
+[data-bs-theme="dark"] .bg-light h1,
+[data-bs-theme="dark"] .bg-light h2,
 [data-bs-theme="dark"] .bg-light .fw-bold {
-  color: var(--bg-white) !important;
+  color: var(--text-dark) !important;
+}
+
+[data-bs-theme="dark"] .bg-light .lead.text-muted {
+  color: var(--text-muted) !important;
 }
 
 /* Blog Page Dark Theme */
-[data-bs-theme="dark"] .blog-hero h1 {
-  color: var(--bg-white) !important;
-}
-
+[data-bs-theme="dark"] .blog-hero h1,
 [data-bs-theme="dark"] .blog-hero .lead {
+  color: var(--text-dark) !important;
+}
+
+.text-highlight {
+  color: var(--secondary-color) !important;
+  font-weight: 700;
+}
+
+[data-bs-theme="dark"] .text-highlight {
+  color: var(--text-dark) !important;
+}
+
+.text-highlight:hover {
+  color: var(--primary-color) !important;
+}
+
+[data-bs-theme="dark"] .card-title,
+[data-bs-theme="dark"] .card-title a,
+[data-bs-theme="dark"] h2 a.text-dark,
+[data-bs-theme="dark"] h5 a.text-dark {
+  color: var(--text-dark) !important;
+}
+
+[data-bs-theme="dark"] .card-title a:hover {
+  color: var(--primary-color) !important;
+}
+
+[data-bs-theme="dark"] .card h5.fw-bold {
   color: var(--bg-white) !important;
 }
 
-[data-bs-theme="dark"] .card-title {
+[data-bs-theme="dark"] .card h5.fw-bold a {
   color: var(--bg-white) !important;
 }
 
-[data-bs-theme="dark"] .card-title a {
+[data-bs-theme="dark"] .card h5.fw-bold a:hover {
+  color: var(--primary-color) !important;
+}
+
+[data-bs-theme="dark"] .card h3.card-title.fw-bold a.text-dark {
   color: var(--bg-white) !important;
+}
+
+[data-bs-theme="dark"] .card h3.card-title.fw-bold a.text-dark:hover {
+  color: var(--primary-color) !important;
 }
 
 /* Contact Page Dark Theme */
@@ -336,4 +460,244 @@ footer a:hover {
     border-right: none;
     border-bottom: 1px solid var(--border-color);
   }
+}
+
+/* MAXIMUM SPECIFICITY OVERRIDE FOR PRICING SECTION */
+[data-bs-theme="dark"] section.bg-light h2.fw-bold {
+  color: #ffffff !important;
+}
+
+[data-bs-theme="dark"] section.bg-light .container h2.fw-bold {
+  color: #ffffff !important;
+}
+
+[data-bs-theme="dark"] section.bg-light .container.text-center h2.fw-bold {
+  color: #ffffff !important;
+}
+
+[data-bs-theme="dark"] .bg-light .card h1.display-3.fw-bold.text-primary {
+  color: var(--primary-color) !important;
+}
+
+[data-bs-theme="dark"] section.bg-light .card p.lead.fw-bold {
+  color: #ffffff !important;
+}
+
+[data-bs-theme="dark"] section.bg-light .card p.text-muted {
+  color: #adb5bd !important;
+}
+
+[data-bs-theme="dark"] section.bg-light .card div span {
+  color: var(--text-dark) !important;
+}
+
+[data-bs-theme="dark"] section.bg-light .card div span.fw-bold {
+  color: var(--text-dark) !important;
+}
+
+/* Home-2: keep Trusted by Backers text readable in dark mode */
+[data-bs-theme="dark"] section.trusted-backers-section .fw-bold {
+  color: var(--text-dark) !important;
+}
+
+[data-bs-theme="dark"] section.trusted-backers-section .text-muted {
+  color: var(--text-muted) !important;
+}
+
+/* Home-2: keep Featured Creators text readable in dark mode */
+[data-bs-theme="dark"] section.featured-creators-section .card h5.fw-bold {
+  color: var(--text-dark) !important;
+}
+
+[data-bs-theme="dark"] section.featured-creators-section .card .text-muted {
+  color: var(--text-muted) !important;
+}
+
+/* Blog page: keep card headings readable in dark mode */
+[data-bs-theme="dark"] .blog-page .card h3.card-title.fw-bold a,
+[data-bs-theme="dark"] .blog-page .card h5.card-title.fw-bold a,
+[data-bs-theme="dark"] .blog-page .card h5.fw-bold {
+  color: var(--text-dark) !important;
+}
+
+[data-bs-theme="dark"] .blog-page .card-title a:hover {
+  color: var(--primary-color) !important;
+}
+
+/* Global hero text readability in dark mode */
+[data-bs-theme="dark"] .hero-section h1,
+[data-bs-theme="dark"] .hero-section h2,
+[data-bs-theme="dark"] section.bg-light.py-5 .container.text-center>h1.fw-bold {
+  color: var(--text-dark) !important;
+}
+
+[data-bs-theme="dark"] .hero-section .lead,
+[data-bs-theme="dark"] .hero-section .text-muted,
+[data-bs-theme="dark"] section.bg-light.py-5 .container.text-center>p.text-muted {
+  color: var(--text-muted) !important;
+}
+
+/* Navbar fix for 1024px view */
+@media (max-width: 1024px) {
+  .navbar-nav {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-nav .nav-item {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-nav .nav-link {
+    white-space: nowrap;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.25rem;
+  }
+
+  .d-flex.align-items-center.gap-2 {
+    flex-wrap: nowrap;
+  }
+}
+
+/* Fix icon visibility in dark mode for "How FUNDRAISE Works" and "Explore Categories" sections */
+[data-bs-theme="dark"] .bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+[data-bs-theme="dark"] .bg-success {
+  background-color: var(--success-color) !important;
+}
+
+[data-bs-theme="dark"] .bg-warning {
+  background-color: #ffc107 !important;
+}
+
+[data-bs-theme="dark"] .bg-info {
+  background-color: #17a2b8 !important;
+}
+
+[data-bs-theme="dark"] .text-primary {
+  color: var(--primary-color) !important;
+}
+
+[data-bs-theme="dark"] .text-danger {
+  color: #dc3545 !important;
+}
+
+[data-bs-theme="dark"] .text-success {
+  color: var(--success-color) !important;
+}
+
+[data-bs-theme="dark"] .text-warning {
+  color: #ffc107 !important;
+}
+
+[data-bs-theme="dark"] .text-info {
+  color: #17a2b8 !important;
+}
+
+[data-bs-theme="dark"] .text-secondary {
+  color: #6c757d !important;
+}
+
+/* Ensure white text inside colored circles remains white */
+[data-bs-theme="dark"] .bg-primary.text-white,
+[data-bs-theme="dark"] .bg-success.text-white,
+[data-bs-theme="dark"] .bg-warning.text-white,
+[data-bs-theme="dark"] .bg-info.text-white {
+  color: #ffffff !important;
+}
+
+/* Fix all card titles and headings visibility in dark mode */
+[data-bs-theme="dark"] .card .card-title.fw-bold,
+[data-bs-theme="dark"] .card h5.card-title.fw-bold {
+  color: var(--text-dark) !important;
+}
+
+[data-bs-theme="dark"] .card .fw-bold:not(.text-primary):not(.text-success):not(.text-warning):not(.text-danger):not(.text-info) {
+  color: var(--text-dark) !important;
+}
+
+/* Fix How FUNDRAISE Works section step titles in dark mode */
+[data-bs-theme="dark"] .bg-light h5.fw-bold {
+  color: var(--text-dark) !important;
+}
+
+/* Fix Explore Categories section category names in dark mode */
+[data-bs-theme="dark"] .card h5.fw-bold:not(.text-primary) {
+  color: var(--text-dark) !important;
+}
+
+/* Fix Success Stories section titles in dark mode */
+[data-bs-theme="dark"] .card-body h5.fw-bold {
+  color: var(--text-dark) !important;
+}
+
+/* Ensure card text content is visible in dark mode */
+[data-bs-theme="dark"] .card p.card-text {
+  color: var(--text-muted) !important;
+}
+
+[data-bs-theme="dark"] .card p.text-muted.small {
+  color: var(--text-muted) !important;
+}
+
+/* Fix all section headings in bg-light sections in dark mode */
+[data-bs-theme="dark"] section.bg-light h5,
+[data-bs-theme="dark"] section.bg-light .fw-bold {
+  color: var(--text-dark) !important;
+}
+
+/* Fix regular section headings in dark mode (non bg-light sections) */
+[data-bs-theme="dark"] section:not(.bg-light):not(.bg-primary) h5.fw-bold {
+  color: var(--text-dark) !important;
+}
+
+[data-bs-theme="dark"] .upcoming-events-section .card.bg-white {
+  background-color: var(--bg-white) !important;
+  color: var(--text-dark) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+[data-bs-theme="dark"] .upcoming-events-section .card.bg-white h5,
+[data-bs-theme="dark"] .upcoming-events-section .card.bg-white p,
+[data-bs-theme="dark"] .upcoming-events-section .card.bg-white .bi,
+[data-bs-theme="dark"] .testimonials-section .card.bg-white h5,
+[data-bs-theme="dark"] .testimonials-section .card.bg-white p {
+  color: var(--text-dark) !important;
+}
+
+/* Ensure Resources section icons and text are visible in dark mode */
+[data-bs-theme="dark"] section.bg-light .card .bi {
+  color: var(--text-dark) !important;
+}
+
+[data-bs-theme="dark"] section.bg-light .card h5 {
+  color: var(--text-dark) !important;
+}
+
+[data-bs-theme="dark"] section.bg-light .card p {
+  color: var(--text-muted) !important;
+}
+
+[data-bs-theme="dark"] .as-seen-in-section .text-muted {
+  color: var(--text-dark) !important;
+}
+
+[data-bs-theme="dark"] .as-seen-in-section div.opacity-50 {
+  opacity: 1 !important;
+}
+
+/* General fixes for section headings */
+[data-bs-theme="dark"] section h2.fw-bold {
+  color: var(--text-dark) !important;
+}
+
+[data-bs-theme="dark"] .bg-primary h2.fw-bold,
+[data-bs-theme="dark"] .upcoming-events-section h2.fw-bold {
+  color: #ffffff !important;
 }

@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discover - FundRise</title>
+    <title>Discover - FUNDRAISE</title>
     <meta name="description" content="Explore categories and find the perfect project to support.">
 
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap-icons/font/bootstrap-icons.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
@@ -21,19 +21,22 @@
     <!-- Header / Navbar (Reuse exact structure) -->
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">FundRise</a>
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/images/logo.svg" alt="FUNDRAISE Logo" width="32" height="32" class="me-2">
+                FUNDRAISE
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse d-none d-lg-block" id="desktopMenu">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="home-2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="home-2.html">Discover</a></li>
                     <li class="nav-item"><a class="nav-link" href="services.html">Start a Campaign</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
 
                 </ul>
 
@@ -48,15 +51,13 @@
     </nav>
 
     <!-- Mobile Offcanvas Menu -->
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title fw-bold text-primary">FundRise</h5>
-            <div class="d-flex justify-content-between align-items-center">
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-                <button class="btn btn-outline-secondary border-0" id="theme-toggle-mobile">
-                    <i class="bi bi-moon-stars-fill"></i>
-                </button>
-            </div>
+            <h5 class="offcanvas-title fw-bold text-primary d-flex align-items-center" id="mobileMenuLabel">
+                <img src="assets/images/logo.svg" alt="FUNDRAISE Logo" width="24" height="24" class="me-2">
+                FUNDRAISE
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -66,13 +67,16 @@
                 <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
                 <li class="nav-item">
                     <hr class="dropdown-divider">
                 </li>
-                <li class="nav-item"><a href="login.html" class="btn btn-outline-primary btn-sm">Log In</a></li>
-                <li class="nav-item"><a href="register.html" class="btn btn-primary btn-sm">Sign Up</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html">Log In</a></li>
+                <li class="nav-item"><a class="nav-link" href="register.html">Sign Up</a></li>
             </ul>
         </div>
+    </div>
+    </div>
     </div>
 
     <!-- Hero Section 2 (Centered) -->
@@ -102,7 +106,8 @@
             <div class="row g-4">
                 <div class="col-lg-6">
                     <div class="card bg-dark text-white border-0 h-100 position-relative overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw1fHx0ZWNoJTIwaW5ub3ZhdGlvbnxlbnwwfDB8fHwxNjk5MDQ2MzQ4fDA&ixlib=rb-4.0.3&q=80&w=1080" class="card-img opacity-50" alt="Tech">
+                        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw1fHx0ZWNoJTIwaW5ub3ZhdGlvbnxlbnwwfDB8fHwxNjk5MDQ2MzQ4fDA&ixlib=rb-4.0.3&q=80&w=1080"
+                            class="card-img opacity-50" alt="Tech">
                         <div class="card-img-overlay d-flex flex-column justify-content-center p-4 text-center">
                             <i class="bi bi-cpu display-4 mb-3"></i>
                             <h3 class="fw-bold text-center">Technology</h3>
@@ -115,7 +120,8 @@
                     <div class="row g-4 h-100">
                         <div class="col-md-6">
                             <div class="card bg-primary text-white border-0 h-100 position-relative overflow-hidden">
-                                <img src="https://images.unsplash.com/photo-1549490349-86767664fa62?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw1fHxnYW1lc3xlbnwwfDB8fHwxNjk5MDQ2NDI&ixlib=rb-4.0.3&q=80&w=1080" class="card-img opacity-25" alt="Art & Design">
+                                <img src="https://images.unsplash.com/photo-1549490349-86767664fa62?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw1fHxnYW1lc3xlbnwwfDB8fHwxNjk5MDQ2NDI&ixlib=rb-4.0.3&q=80&w=1080"
+                                    class="card-img opacity-25" alt="Art & Design">
                                 <div class="card-img-overlay d-flex flex-column justify-content-center p-4 text-center">
                                     <i class="bi bi-palette display-4 mb-3"></i>
                                     <div>
@@ -127,7 +133,8 @@
                         </div>
                         <div class="col-md-6">
                             <div class="card bg-warning text-dark border-0 h-100 position-relative overflow-hidden">
-                                <img src="https://images.unsplash.com/photo-1542751371-adc38148e7fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw1fHxnYW1lc3xlbnwwfDB8fHwxNjk5MDQ2NDI&ixlib=rb-4.0.3&q=80&w=1080" class="card-img opacity-25" alt="Games">
+                                <img src="https://images.unsplash.com/photo-1542751371-adc38148e7fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw1fHxnYW1lc3xlbnwwfDB8fHwxNjk5MDQ2NDI&ixlib=rb-4.0.3&q=80&w=1080"
+                                    class="card-img opacity-25" alt="Games">
                                 <div class="card-img-overlay d-flex flex-column justify-content-center p-4 text-center">
                                     <i class="bi bi-controller display-4 mb-3"></i>
                                     <div>
@@ -139,8 +146,10 @@
                         </div>
                         <div class="col-md-12">
                             <div class="card bg-success text-white border-0 h-100 position-relative overflow-hidden">
-                                <img src="https://images.unsplash.com/photo-156047367037-4a0b6e5b0f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw1fHxnYW1lc3xlbnwwfDB8fHwxNjk5MDQ2NDI&ixlib=rb-4.0.3&q=80&w=1080" class="card-img opacity-25" alt="Social Impact">
-                                <div class="card-img-overlay d-flex align-items-center justify-content-between p-4 text-center">
+                                <img src="https://images.unsplash.com/photo-156047367037-4a0b6e5b0f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw1fHxnYW1lc3xlbnwwfDB8fHwxNjk5MDQ2NDI&ixlib=rb-4.0.3&q=80&w=1080"
+                                    class="card-img opacity-25" alt="Social Impact">
+                                <div
+                                    class="card-img-overlay d-flex align-items-center justify-content-between p-4 text-center">
                                     <div class="text-center">
                                         <h4 class="text-center">Social Impact</h4>
                                         <p class="mb-0 text-center">Support causes that matter.</p>
@@ -156,7 +165,7 @@
     </section>
 
     <!-- Testimonials -->
-    <section class="bg-light py-5">
+    <section class="bg-light py-5 trusted-backers-section">
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="fw-bold">Trusted by Backers</h2>
@@ -168,31 +177,37 @@
                     <div class="carousel-item active">
                         <div class="row justify-content-center">
                             <div class="col-md-8 text-center">
-                                <img src="https://images.unsplash.com/photo-1438761681033-2c6de69898b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw1fHx0ZWNoJTIwaW5ub3ZhdGlvbnxlbnwwfDB8fHwxNjk5MDQ2MzQ4fDA&ixlib=rb-4.0.3&q=80&w=1080" class="rounded-circle mb-3 shadow-sm" alt="Sarah Jenkins">
+                                <img src="https://placehold.co/120x120/4A90E2/ffffff?text=SJ"
+                                    class="rounded-circle mb-3 shadow-sm" alt="Sarah Jenkins">
                                 <h5 class="fw-bold">Sarah Jenkins</h5>
                                 <p class="text-primary mb-3">Serial Backer</p>
-                                <p class="lead fst-italic">"FundRise has the most transparent creators. I love seeing progress updates every week. It feels like I'm part of the team."</p>
+                                <p class="lead fst-italic">"FundRise has the most transparent creators. I love seeing
+                                    progress updates every week. It feels like I'm part of the team."</p>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="row justify-content-center">
                             <div class="col-md-8 text-center">
-                                <img src="https://images.unsplash.com/photo-1507003211169-0a1f73368f5a28?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw1fHx0ZWNoJTIwaW5ub3ZhdGlvbnxlbnwwfDB8fHwxNjk5MDQ2MzQ4fDA&ixlib=rb-4.0.3&q=80&w=1080" class="rounded-circle mb-3 shadow-sm" alt="Mark D'Souza">
+                                <img src="https://placehold.co/120x120/28a745/ffffff?text=MD"
+                                    class="rounded-circle mb-3 shadow-sm" alt="Mark D'Souza">
                                 <h5 class="fw-bold">Mark D'Souza</h5>
                                 <p class="text-primary mb-3">Tech Enthusiast</p>
-                                <p class="lead fst-italic">"I've backed 5 projects here and all were delivered on time. The secure payment system gives me peace of mind."</p>
+                                <p class="lead fst-italic">"I've backed 5 projects here and all were delivered on time.
+                                    The secure payment system gives me peace of mind."</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Dark theme carousel controls -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev">
                     <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next">
                     <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
@@ -201,7 +216,7 @@
     </section>
 
     <!-- Featured Creators Section -->
-    <section class="py-5">
+    <section class="py-5 featured-creators-section">
         <div class="container text-center">
             <h2 class="fw-bold mb-5">Featured Creators</h2>
             <div class="row g-4">
@@ -209,7 +224,8 @@
                     <div class="card h-100 border-0 shadow-sm text-center">
                         <div class="card-body">
                             <div class="mb-3">
-                                <img src="https://placehold.co/100x100/4A90E2/ffffff?text=TC" class="rounded-circle" alt="Creator">
+                                <img src="https://placehold.co/100x100/4A90E2/ffffff?text=TC" class="rounded-circle"
+                                    alt="Creator">
                             </div>
                             <h5 class="fw-bold">Tech Creator</h5>
                             <p class="text-muted small">15+ Projects Funded</p>
@@ -223,7 +239,8 @@
                     <div class="card h-100 border-0 shadow-sm text-center">
                         <div class="card-body">
                             <div class="mb-3">
-                                <img src="https://placehold.co/100x100/28a745/ffffff?text=AD" class="rounded-circle" alt="Creator">
+                                <img src="https://placehold.co/100x100/28a745/ffffff?text=AD" class="rounded-circle"
+                                    alt="Creator">
                             </div>
                             <h5 class="fw-bold">Artist</h5>
                             <p class="text-muted small">8+ Projects Funded</p>
@@ -237,7 +254,8 @@
                     <div class="card h-100 border-0 shadow-sm text-center">
                         <div class="card-body">
                             <div class="mb-3">
-                                <img src="https://placehold.co/100x100/f5a623/ffffff?text=EF" class="rounded-circle" alt="Creator">
+                                <img src="https://placehold.co/100x100/f5a623/ffffff?text=EF" class="rounded-circle"
+                                    alt="Creator">
                             </div>
                             <h5 class="fw-bold">Filmmaker</h5>
                             <p class="text-muted small">12+ Projects Funded</p>
@@ -251,7 +269,8 @@
                     <div class="card h-100 border-0 shadow-sm text-center">
                         <div class="card-body">
                             <div class="mb-3">
-                                <img src="https://placehold.co/100x100/dc3545/ffffff?text=MJ" class="rounded-circle" alt="Creator">
+                                <img src="https://placehold.co/100x100/dc3545/ffffff?text=MJ" class="rounded-circle"
+                                    alt="Creator">
                             </div>
                             <h5 class="fw-bold">Musician</h5>
                             <p class="text-muted small">20+ Projects Funded</p>
@@ -370,7 +389,7 @@
     </section>
 
     <!-- Upcoming Events Section -->
-    <section class="bg-primary text-white py-5">
+    <section class="bg-primary text-white py-5 upcoming-events-section">
         <div class="container text-center">
             <h2 class="fw-bold mb-5">Upcoming Events</h2>
             <div class="row g-4">
@@ -486,7 +505,7 @@
     </section>
 
     <!-- Trust Indicators / Logos -->
-    <section class="py-5">
+    <section class="py-5 as-seen-in-section">
         <div class="container text-center">
             <p class="text-muted fw-bold mb-4">AS SEEN IN</p>
             <div class="d-flex justify-content-center flex-wrap gap-5 opacity-50">
@@ -503,7 +522,10 @@
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-4">
-                    <h4 class="fw-bold mb-3 text-white">FundRise</h4>
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="assets/images/logo.svg" alt="FUNDRAISE Logo" width="40" height="40" class="me-3">
+                        <h4 class="fw-bold mb-0 footer-brand">FUNDRAISE</h4>
+                    </div>
                     <p class="text-white-50">Empowering creators and backers to build a better future together. Trust,
                         transparency, and innovation.</p>
                     <div class="d-flex gap-3 mt-3">
@@ -553,7 +575,7 @@
             <hr class="border-secondary my-4">
             <div class="row align-items-center">
                 <div class="col-md-6 text-center text-md-start">
-                    <small class="text-white-50">&copy; 2026 FundRise. All Rights Reserved.</small>
+                    <small class="text-white-50">&copy; 2026 FUNDRAISE. All Rights Reserved.</small>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <a href="#" class="text-white-50 me-3 small">Privacy</a>
