@@ -156,6 +156,14 @@ section {
   /* Highlight progress with Action color */
 }
 
+/* Auth buttons consistency */
+.btn-auth {
+  min-width: 100px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* --- Navbar --- */
 .navbar {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
@@ -702,6 +710,7 @@ footer a:hover {
 }
 
 [data-bs-theme="dark"] .bg-primary h2.fw-bold,
+[data-bs-theme="dark"] .bg-primary p,
 [data-bs-theme="dark"] .upcoming-events-section h2.fw-bold {
   color: #ffffff !important;
 }
